@@ -1,0 +1,22 @@
+Commands
+npm init --yes = To creare a package json it's the main file of my project 
+
+//Dependencies
+npm install express = Framework  npm install express mysql express-myconnection morgan ejs
+ejs = templating engine 
+express-myconnection To create all the modules of connection 
+src folder = To write the main code of the project
+node .\src\app.js = To run a specific file within folder 
+
+
+//To use nodemon 
+npm install nodemon -D = Restar the server when a change exists
+nodemon .\src\app.js = To run the server using nodemon
+npm run dev = To create commands from scrip npm run dev = node src/app.js`
+
+Middlewares = Function which are run before user's petitions
+GET / 404 3.360 ms - 139 This's an example 
+
+
+To connect mysql
+mysql -u root -p
