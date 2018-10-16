@@ -54,6 +54,7 @@ controller.edit = (req, res) => {
 });
 };
 
+//To update rows of the database
 controller.update = (req, res) => {
     
     const {id}  = req.params;
