@@ -1,0 +1,3 @@
+hola a todos los linuxseros si tiene problemas el la consola y no reconoce el comando de mysql hay que instalar mysql-server para poder usarlo en la consola (independientemente que ya tengan instalado mysql-client en su sistema),,, pero si al usar el comando les aparece un error como este : ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2).... pueden usar esto: mysql -h 127.0.0.1 -P 3306 -u root -p en ves de mysql -u root -p y ya con eso queda,, yo tengo linux mint e instale xampp pero no me agarraba la consola y con eso lo resolvi, espero les sirva de ayuda ;)?
+
+C:\xampp\mysql\bin

@@ -1,0 +1,3 @@
+// To change a fild from null to not null 
+ALTER TABLE multa
+MODIFY fecha_multa date NOT NULL; 

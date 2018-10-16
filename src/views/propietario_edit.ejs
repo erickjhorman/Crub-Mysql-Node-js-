@@ -1,0 +1,30 @@
+<!--Importing the partials-->
+<% include partials/_headers %>
+
+<div class="container mt-5">
+     <div class="row">
+         <div class="col-md-5">
+           <div class="card">
+              <div class="card-body"> 
+                <form action="/update/<%= data.id%>" method="post">
+                    <div class="form-group ">
+                        <label  class="col  col-form-label">Nombre</label>
+                        <div class="col-sm-10">
+                          <input type="text" name="nombre" value="<%= data.nombre%>" class="form-control" id="nombre">
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <label  class="col col-form-label">Apellido</label>
+                        <div class="col-sm-10">
+                          <input type="text" name="apellido" class="form-control" id="apellido" value="<%= data.apellido%>">
+                        </div>
+                      </div>
+                      <button type="submit"  class="form-group btn btn-primary">Editar</button>
+                  </form>
+              </div>
+           </div>
+         </div>
+     </div>
+</div>
+
+<% include partials/_footers %>
