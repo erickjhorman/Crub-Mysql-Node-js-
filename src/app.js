@@ -9,9 +9,11 @@ const app = express();
 
 
 //Importing routes
+const loginRoutes = require('./routes/login');
 const propietarioRoutes = require('./routes/propietario');
 const VehiculoRoutes = require('./routes/vehiculo');
 const multaRoutes = require('./routes/multa');
+
 
 //Settings of the server 
 app.set('port', process.env.PORT || 2000); // To check if exists a port in the server if not it'll use the default
@@ -32,9 +34,11 @@ app.use(express.urlencoded({extended:false})); //To interpret the information of
 
 //Routes 
 //My server can use the routes now 
-app.use('/' , propietarioRoutes);
+app.use('/', loginRoutes);
+app.use('/propietario' , propietarioRoutes);
 app.use('/' , VehiculoRoutes);
 app.use('/' , multaRoutes);
+
 
 //Static files to create css, boostrap
 app.use(express.static(path.join(__dirname, 'public')));
